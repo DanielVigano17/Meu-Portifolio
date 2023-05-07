@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    @include responsive(700px){
+        font-size: 55.5%;
+    }
+    @include responsive(480px){
+        font-size: 60.5%;
+    }
+}
+body{
+    background-color: $primary-color;
+    overflow-x: hidden;
+
+    scrollbar-width: 3px;          /* "auto" or "thin" */
+    scrollbar-color: $second-color none;   /* scroll thumb and track */
+}
+body::-webkit-scrollbar {
+    width: 0.4rem;               
+  }
+  
+body::-webkit-scrollbar-track {
+    background-color: none;        
+  }
+
+body::-webkit-scrollbar-thumb {
+    background-color: $second-color;    
+    border-radius: 20px;      
+   
+  }
+
+
+img{
+    max-width: 100%;
+    display: block;
+    margin: 0;
+}
+button{
+    background-color: transparent;
+    cursor: pointer;
+}
